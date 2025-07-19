@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    
+
 }
 
 body {
@@ -102,7 +102,7 @@ main hr {
 .secondSection {
     max-width: 80vw;
     margin-left: 85px;
-    height: 80vh;
+    height: 70vh;
 }
 
 .secondSection h1 {
@@ -114,7 +114,7 @@ main hr {
     background: white;
     height: 0.5px;
     width: 80vw;
-    margin: 90px 60px;
+    margin: 150px 60px;
     display: flex;
     box-shadow: 0 0 10px rgba(126, 86, 230, 0.8);
     /* glow */
@@ -158,10 +158,10 @@ main hr {
 
 }
 
-.container1-html:hover {
+/* .container1-html:hover { : not looking sso good so i removed
     transform: scale(1.03);
     transition: transform 0.3s ease-in-out;
-}
+} */
 
 @keyframes pulseGlow {
     0% {
@@ -195,4 +195,49 @@ main hr {
     font-size: 14px;
     line-height: 1.4;
     color: #f0f0f0;
+}
+
+.sectionThree {
+    max-width: 80vw;
+    margin-left: 85px;
+    height: 70vh;
+}
+
+.sectionThree {
+    max-width: 85vw;
+    margin: 60px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(126, 86, 230, 0.3);
+    line-height: 2.3;
+}
+
+.sectionThree h1 {
+    font-size: 2rem;
+    color: rgb(126, 86, 230);
+}
+
+.sectionThree p {
+    font-size: 1rem;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 10px rgba(126, 86, 230, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(126, 86, 230, 1);
+    }
+
+    100% {
+        box-shadow: 0 0 10px rgba(126, 86, 230, 0.5);
+    }
+}
+
+.sectionThree {
+    animation: pulseGlow 2s infinite;
 }
