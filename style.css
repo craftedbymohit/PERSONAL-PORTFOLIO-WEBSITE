@@ -57,6 +57,15 @@ main hr {
     height: 0.5px;
     margin: 40px 84px;
 }
+.subhr{
+
+    border: 0px;
+    background: rgb(48, 48, 49);
+    height: 0.5px;
+    margin: 40px;
+
+
+}
 
 .left {
     font-size: 2rem;
@@ -240,4 +249,57 @@ main hr {
 
 .sectionThree {
     animation: pulseGlow 2s infinite;
+}
+.sectionFour{
+    max-width: 80vw;
+    margin-left: 85px;
+    height: 180vh;
+}
+.sectionFour h1 {
+    font-size: 2rem;
+    color: rgb(126, 86, 230);
+}
+.firstService{
+    max-width: 80vw;
+    display: flex;
+
+}
+.firstServiceImg{
+    border-radius: 15px;
+}
+.firstServiceImg img{
+    height: 300px;
+    width: 420px;
+    margin: 70px;
+    border-radius: 15px;
+}
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 10px rgba(126, 86, 230, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(126, 86, 230, 1);
+    }
+
+    100% {
+        box-shadow: 0 0 10px rgba(126, 86, 230, 0.5);
+    }
+}
+
+.firstServiceImg img{
+    animation: pulseGlow 2s infinite;
+}
+.firstServiceText{
+    margin: 100px 50px;
+}
+.firstServiceTexTtitle{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.firstServiceTextdesc{
+    font-size: 14px;
+    color: rgb(186, 185, 185);
+    margin: 20px 20px;
+    line-height: 2;
 }
