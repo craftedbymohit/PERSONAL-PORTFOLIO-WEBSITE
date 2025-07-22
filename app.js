@@ -96,3 +96,40 @@ const observer = new IntersectionObserver((entries) => {
 // Tell the observer which sections to watch for visibility
 observer.observe(document.getElementById("secondService"));
 observer.observe(document.getElementById("thirdService"));
+
+// ADDING THE SCROLL BEHAVIOUR WHEN A BUTTON IS CLICKED
+
+// Wait until the whole HTML page has loaded before running this code
+document.addEventListener("DOMContentLoaded", () => {
+
+  // Select all <a> links inside the <nav> tag (Home, About, etc.)
+  const links = document.querySelectorAll("nav a");
+
+  // Loop through each link one by one
+  links.forEach(link => {
+
+    // Add a click event listener to each link
+    link.addEventListener("click", function (e) {
+
+      // Get the value of the href (like "#about") and remove the "#" to get just "about"
+      const targetId = this.getAttribute("href").substring(1);
+
+      // Use that ID to find the section on the page with that ID (e.g., <div id="about">)
+      const targetSection = document.getElementById(targetId);
+
+      // If the clicked link is "Home"
+      if (targetId === "home") {
+        location.reload(); // Reload the entire page
+      } 
+      // If it's another section like "about", "services", etc.
+      else if (targetSection) {
+        e.preventDefault(); // Stop the default jump-to-section behavior
+
+        // Scroll smoothly to that section
+        targetSection.scrollIntoView({
+          behavior: "smooth"
+        });
+      }
+    });
+  });
+});

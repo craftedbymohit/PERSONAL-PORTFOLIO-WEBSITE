@@ -695,5 +695,12 @@ main hr {
     font-size: 0.9rem;
 }
 
-
+/* CSS FOR JS PART OF NAV BAR */
+#home,
+#about,
+#services,
+#projects,
+#contact {
+    scroll-margin-top: 80px;
+}
 
