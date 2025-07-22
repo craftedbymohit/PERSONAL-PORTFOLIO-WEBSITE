@@ -687,5 +687,13 @@ main hr {
     color: #5800b1;
     transform: scale(1.2);
 }
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #111;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
 
 
